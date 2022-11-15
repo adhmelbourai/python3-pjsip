@@ -2947,7 +2947,7 @@ def _worker_thread_main(arg):
     _lib._err_check("thread_register()", _lib, err)
     while _lib and _lib._quit == 0:
         _lib.handle_events(1)
-    time.sleep(0.050)
+        time.sleep(0.050)
     if _lib:
         _lib._quit = 2
     _Trace(('worker thread exited..',))
